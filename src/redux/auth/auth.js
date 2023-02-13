@@ -71,7 +71,7 @@ const getUser = createAsyncThunk(
   }
 );
 
-const refresh = createAsyncThunk(
+export const refresh = createAsyncThunk(
   'auth/refresh',
   async (sid, { rejectWithValue, getState, dispatch }) => {
     try {

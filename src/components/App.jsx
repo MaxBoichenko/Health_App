@@ -1,29 +1,28 @@
 import UserRoutes from './Routes/UserRoutes';
-import { Header } from './Header/Header';
+import Header from './Header/Header';
 
-// import { useDispatch, useSelector } from 'react-redux';
-// import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
 
-// import { getSid, getUserIsRefreshing } from 'redux/auth/auth-selectors';
-// import { refresh } from 'redux/auth/auth-opetations';
+import { refresh } from 'redux/auth/auth';
 
-// import Loader from 'components/Loader';
+import Loader from 'components/Loader/Loader';
 
 export const App = () => {
-  //   const userIsRefreshing = useSelector(getUserIsRefreshing);
+  const userIsRefreshing = useSelector(state => state.auth.isRefreshing);
 
-  //   const sid = useSelector(getSid);
+  const sid = useSelector(state => state.auth.sid);
 
-  //   const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-  //   useEffect(() => {
-  //     dispatch(refresh({ sid }));
-  //     // eslint-disable-next-line
-  //   }, []);
+  useEffect(() => {
+    dispatch(refresh({ sid }));
+    // eslint-disable-next-line
+  }, []);
 
-  //   if (userIsRefreshing) {
-  //     return <Loader />;
-  //   }
+  if (userIsRefreshing) {
+    return <Loader />;
+  }
 
   return (
     <>
