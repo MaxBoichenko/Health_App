@@ -1,13 +1,12 @@
 import { Oval } from 'react-loader-spinner';
-
-import s from './Loader.module.scss';
+import s from './LoaderMini.module.scss';
 
 const Loader = () => {
   return (
     <div className={s.loader}>
       <Oval
-        height="150"
-        width="150"
+        height="50"
+        width="50"
         color="#fc842d"
         secondaryColor="transparent"
       />
