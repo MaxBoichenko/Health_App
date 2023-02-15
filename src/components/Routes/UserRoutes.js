@@ -5,8 +5,8 @@ import Loader from 'components/Loader/Loader';
 import PublicRoute from './PublicRoutes';
 
 const HomePage = lazy(() => import('pages/HomePage'));
-// const LoginPage = lazy(() => import('pages/LoginPage'));
-// const RegisterPage = lazy(() => import('pages/RegisterPage'));
+const LoginPage = lazy(() => import('pages/LoginPage'));
+const RegisterPage = lazy(() => import('pages/RegisterPage'));
 const NotFoundPage = lazy(() => import('pages/NotFoundPage/NotFoundPage'));
 
 const UserRoutes = () => {
@@ -15,8 +15,8 @@ const UserRoutes = () => {
       <Routes>
         <Route element={<PublicRoute />}>
           <Route path="/" element={<HomePage />} />
-          {/* <Route path="/registration" element={<RegisterPage />} />
-          <Route path="/login" element={<LoginPage />} /> */}
+          <Route path="/registration" element={<RegisterPage />} />
+          <Route path="/login" element={<LoginPage />} />
         </Route>
 
         <Route path="*" element={<NotFoundPage />} />
