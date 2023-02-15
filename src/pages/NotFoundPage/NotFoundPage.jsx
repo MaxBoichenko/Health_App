@@ -16,7 +16,7 @@ const NotFoundPage = () => {
         </div>
         <div className={s.shadow}></div>
 
-        <h1 className={s.title}>Ой!</h1>
+        <h1 className={s.title}>Opps!</h1>
         <p className={s.txt}>
          We could not find the page,
           <br />
