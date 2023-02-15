@@ -146,7 +146,7 @@ const CalcForm = () => {
           </div>
         </div>
         <div className={s.buttonPosition}>
-          <Button text="Lose weight" type="submit" btnClass="btn" />
+          <Button text="Start losing weight" type="submit" btnClass="btn" />
         </div>
       </form>
       <SideBar />

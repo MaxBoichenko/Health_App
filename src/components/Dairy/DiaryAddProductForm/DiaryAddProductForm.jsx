@@ -119,7 +119,7 @@ const DiaryAddProductForm = ({ setModalOpen }) => {
         </div>
 
         <div className={s.btn}>
-          {isMobile && <Button text={'Додати'} btnClass={'btn'} />}
+          {isMobile && <Button text={'Add'} btnClass={'btn'} />}
           {isTabletDesktop && <Button text={'+'} btnClass={'btnPlus'} />}
         </div>
       </form>
