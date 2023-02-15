@@ -16,11 +16,11 @@ const NotFoundPage = () => {
         </div>
         <div className={s.shadow}></div>
 
-        <h1 className={s.title}>Ой!</h1>
+        <h1 className={s.title}>Opps!</h1>
         <p className={s.txt}>
-          Нам не вдалося знайти сторінку,
+         We could not find the page,
           <br />
-          яку ви шукали.
+          you were looking for.
         </p>
 
         <Link to={backLinkHref}>
