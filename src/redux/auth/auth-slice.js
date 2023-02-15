@@ -1,101 +1,5 @@
-import { createAsyncThunk } from '@reduxjs/toolkit';
-import {
-  axiosLogin,
-  axiosLogout,
-  axiosRegister,
-  axiosRefresh,
-} from 'services/auth';
-import { axiosGetUser } from 'services/user';
-
 import { createSlice } from '@reduxjs/toolkit';
-
-const register = createAsyncThunk(
-  'auth/register',
-  async (userData, { rejectWithValue, dispatch }) => {
-    try {
-      const { email, password } = userData;
-      const data = await axiosRegister(userData);
-      dispatch(
-        login({
-          email,
-          password,
-        })
-      );
-      return data;
-    } catch (error) {
-      const { data, status } = error.response;
-      return rejectWithValue({ data, status });
-    }
-  }
-);
-
-const login = createAsyncThunk(
-  'auth/login',
-  async (userData, { rejectWithValue }) => {
-    try {
-      const data = await axiosLogin(userData);
-      return data;
-    } catch (error) {
-      const { data, status } = error.response;
-      return rejectWithValue({ data, status });
-    }
-  }
-);
-
-const logout = createAsyncThunk(
-  'auth/logout',
-  async (_, { rejectWithValue, getState }) => {
-    try {
-      const {
-        auth: { accessToken },
-      } = getState();
-      const data = await axiosLogout(accessToken);
-      return data;
-    } catch (error) {
-      const { data, status } = error.response;
-      return rejectWithValue({ data, status });
-    }
-  }
-);
-
-const getUser = createAsyncThunk(
-  'auth/get/user',
-  async (accessToken, { rejectWithValue }) => {
-    try {
-      const data = await axiosGetUser(accessToken);
-      return data;
-    } catch (error) {
-      const { data, status } = error.response;
-      return rejectWithValue({ data, status });
-    }
-  }
-);
-
-export const refresh = createAsyncThunk(
-  'auth/refresh',
-  async (sid, { rejectWithValue, getState, dispatch }) => {
-    try {
-      const {
-        auth: { refreshToken },
-      } = getState();
-      const data = await axiosRefresh(sid, refreshToken);
-      const { newAccessToken } = data;
-      dispatch(getUser(newAccessToken));
-      return data;
-    } catch (error) {
-      const { data, status } = error.response;
-      return rejectWithValue({ data, status });
-    }
-  },
-  {
-    condition: (_, { getState }) => {
-      const { auth } = getState();
-      if (!auth.sid) {
-        return false;
-      }
-    },
-  }
-);
+import { register, login, logout, refresh, getUser } from './auth-opetations';
 
 const initialState = {
   user: {},
@@ -194,10 +98,7 @@ const auth = createSlice({
       store.isRefreshing = false;
     },
 
-    [refresh.rejected]: (store, { payload }) => ({
-      ...initialState,
-      error: payload,
-    }),
+    [refresh.rejected]: (store, {payload}) => ({ ...initialState, error: payload}),
 
     // * GET USER
 
