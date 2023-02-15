@@ -1,15 +1,24 @@
 {
   "files": {
     "main.css": "/Health_App/static/css/main.197fc069.css",
-    "main.js": "/Health_App/static/js/main.39632cc1.js",
+    "main.js": "/Health_App/static/js/main.be5ac66b.js",
+    "static/css/967.fff1bd29.chunk.css": "/Health_App/static/css/967.fff1bd29.chunk.css",
+    "static/js/967.e7388b7c.chunk.js": "/Health_App/static/js/967.e7388b7c.chunk.js",
     "static/js/280.075f334b.chunk.js": "/Health_App/static/js/280.075f334b.chunk.js",
+    "static/media/bcgD@2x.png": "/Health_App/static/media/bcgD@2x.7d5af67d05df6e0bba78.png",
+    "static/media/bghometabletx2.png": "/Health_App/static/media/bghometabletx2.3a1da868f03884fef371.png",
+    "static/media/bcgD.png": "/Health_App/static/media/bcgD.06d7e880436282e9dadf.png",
+    "static/media/bghometablet.png": "/Health_App/static/media/bghometablet.1c423c61002d6bb936cc.png",
     "index.html": "/Health_App/index.html",
+    "static/media/arrow.svg": "/Health_App/static/media/arrow.24ce6b342eecfc3ce7e0b459a70fddbb.svg",
     "main.197fc069.css.map": "/Health_App/static/css/main.197fc069.css.map",
-    "main.39632cc1.js.map": "/Health_App/static/js/main.39632cc1.js.map",
+    "main.be5ac66b.js.map": "/Health_App/static/js/main.be5ac66b.js.map",
+    "967.fff1bd29.chunk.css.map": "/Health_App/static/css/967.fff1bd29.chunk.css.map",
+    "967.e7388b7c.chunk.js.map": "/Health_App/static/js/967.e7388b7c.chunk.js.map",
     "280.075f334b.chunk.js.map": "/Health_App/static/js/280.075f334b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.197fc069.css",
-    "static/js/main.39632cc1.js"
+    "static/js/main.be5ac66b.js"
   ]
 }
