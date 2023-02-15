@@ -24,7 +24,7 @@ const NotFoundPage = () => {
         </p>
 
         <Link to={backLinkHref}>
-          <Button text="Повернутися" btnClass="btnLight" />
+          <Button text="Return" btnClass="btnLight" />
         </Link>
       </div>
     </div>
