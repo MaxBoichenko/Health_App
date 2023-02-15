@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Health_App/static/css/main.2a681adb.css",
-    "main.js": "/Health_App/static/js/main.9ad02f94.js",
+    "main.js": "/Health_App/static/js/main.b063a8a3.js",
     "static/css/708.121a74bc.chunk.css": "/Health_App/static/css/708.121a74bc.chunk.css",
     "static/js/708.046c0e06.chunk.js": "/Health_App/static/js/708.046c0e06.chunk.js",
     "static/css/773.5e4217a1.chunk.css": "/Health_App/static/css/773.5e4217a1.chunk.css",
@@ -13,7 +13,7 @@
     "static/css/252.3af7927f.chunk.css": "/Health_App/static/css/252.3af7927f.chunk.css",
     "static/js/252.06457381.chunk.js": "/Health_App/static/js/252.06457381.chunk.js",
     "static/css/93.a2a348b1.chunk.css": "/Health_App/static/css/93.a2a348b1.chunk.css",
-    "static/js/93.f3a99e00.chunk.js": "/Health_App/static/js/93.f3a99e00.chunk.js",
+    "static/js/93.2cf9a422.chunk.js": "/Health_App/static/js/93.2cf9a422.chunk.js",
     "static/js/134.a3e50722.chunk.js": "/Health_App/static/js/134.a3e50722.chunk.js",
     "static/js/403.072cab87.chunk.js": "/Health_App/static/js/403.072cab87.chunk.js",
     "static/media/tabletx2.png": "/Health_App/static/media/tabletx2.a3abe27e67ff4847bf82.png",
@@ -83,7 +83,7 @@
     "static/media/back.svg": "/Health_App/static/media/back.24ce6b342eecfc3ce7e0.svg",
     "static/media/removeBtn.svg": "/Health_App/static/media/removeBtn.d66f88109a467da5b2e3c6f098eba38d.svg",
     "main.2a681adb.css.map": "/Health_App/static/css/main.2a681adb.css.map",
-    "main.9ad02f94.js.map": "/Health_App/static/js/main.9ad02f94.js.map",
+    "main.b063a8a3.js.map": "/Health_App/static/js/main.b063a8a3.js.map",
     "708.121a74bc.chunk.css.map": "/Health_App/static/css/708.121a74bc.chunk.css.map",
     "708.046c0e06.chunk.js.map": "/Health_App/static/js/708.046c0e06.chunk.js.map",
     "773.5e4217a1.chunk.css.map": "/Health_App/static/css/773.5e4217a1.chunk.css.map",
@@ -95,12 +95,12 @@
     "252.3af7927f.chunk.css.map": "/Health_App/static/css/252.3af7927f.chunk.css.map",
     "252.06457381.chunk.js.map": "/Health_App/static/js/252.06457381.chunk.js.map",
     "93.a2a348b1.chunk.css.map": "/Health_App/static/css/93.a2a348b1.chunk.css.map",
-    "93.f3a99e00.chunk.js.map": "/Health_App/static/js/93.f3a99e00.chunk.js.map",
+    "93.2cf9a422.chunk.js.map": "/Health_App/static/js/93.2cf9a422.chunk.js.map",
     "134.a3e50722.chunk.js.map": "/Health_App/static/js/134.a3e50722.chunk.js.map",
     "403.072cab87.chunk.js.map": "/Health_App/static/js/403.072cab87.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2a681adb.css",
-    "static/js/main.9ad02f94.js"
+    "static/js/main.b063a8a3.js"
   ]
 }
