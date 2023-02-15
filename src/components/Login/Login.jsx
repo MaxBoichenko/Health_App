@@ -50,7 +50,7 @@ const Login = () => {
   return (
     <section className={s.login}>
       <Container>
-        <h2 className={s.title}>Вхід</h2>
+        <h2 className={s.title}>log in</h2>
         <form className={s.form} onSubmit={handleSubmit(onSubmit)}>
           <Controller
             control={control}

@@ -63,10 +63,10 @@ const SideBar = () => {
   return (
     <div className={styles.container_sidebar}>
       <div className={styles.sum}>
-        <h3 className={styles.title_sidebar}>Резюме за {date}</h3>
+        <h3 className={styles.title_sidebar}> Summary for{date}</h3>
         <ul className={styles.list_sidebar}>
           <li className={styles.item_sidebar}>
-            <p className={styles.text_sidebar_sum}>Залишилося</p>
+            <p className={styles.text_sidebar_sum}>Left</p>
             <span className={styles.data}>
               {kcalLeft
                 ? Math.floor(kcalLeft) + ' kcal'
@@ -76,7 +76,7 @@ const SideBar = () => {
             </span>
           </li>
           <li className={styles.item_sidebar}>
-            <p className={styles.text_sidebar}>Спожилося</p>
+            <p className={styles.text_sidebar}>Consumed</p>
             <span className={styles.data}>
               {kcalConsumed
                 ? Math.floor(kcalConsumed) + ' kcal'
@@ -86,7 +86,7 @@ const SideBar = () => {
             </span>
           </li>
           <li className={styles.item_sidebar}>
-            <p className={styles.text_sidebar}>Добова норма</p>
+            <p className={styles.text_sidebar}>Daily rate</p>
             <span className={styles.data}>
               {dailyRate
                 ? Math.floor(dailyRate) + ' kcal'
@@ -96,7 +96,7 @@ const SideBar = () => {
             </span>
           </li>
           <li className={styles.item_sidebar}>
-            <p className={styles.text_sidebar}>% від норми</p>
+            <p className={styles.text_sidebar}>% of normal</p>
             <span className={styles.data}>
               {percentsOfDailyRate
                 ? Math.floor(percentsOfDailyRate) + ' %'
@@ -108,7 +108,7 @@ const SideBar = () => {
         </ul>
       </div>
       <div className={styles.food}>
-        <h3 className={styles.title_sidebar}>Не рекомендована їжа</h3>
+        <h3 className={styles.title_sidebar}>Food not recommended</h3>
         {notAllowedProducts?.length > 0 && (
           <TextFieldDefault
             handleChange={filterRecommendedFood}
@@ -128,7 +128,7 @@ const SideBar = () => {
         )}
         {notAllowedProducts?.length === 0 && (
           <p className={styles.text_sidebar_food}>
-            Тут відображатиметься ваш раціон.
+            Your diet will be displayed here
           </p>
         )}
       </div>
