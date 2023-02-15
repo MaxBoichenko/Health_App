@@ -11,7 +11,7 @@ import './styles/styles.scss';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Health_App">
       <Provider store={store}>
         <PersistGate loading={<Loader />} persistor={persistor}>
           <App />
