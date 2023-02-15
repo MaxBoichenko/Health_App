@@ -18,9 +18,9 @@ const NotFoundPage = () => {
 
         <h1 className={s.title}>Ой!</h1>
         <p className={s.txt}>
-          Нам не вдалося знайти сторінку,
+         We could not find the page,
           <br />
-          яку ви шукали.
+          you were looking for.
         </p>
 
         <Link to={backLinkHref}>
