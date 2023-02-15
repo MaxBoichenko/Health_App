@@ -81,7 +81,7 @@ const Login = () => {
             )}
           />
           <div className={s.wrap}>
-            <Button text="Ввійти" btnClass="btn" />
+            <Button text="Log in" btnClass="btn" />
           </div>
         </form>
         {!isRetina && (
