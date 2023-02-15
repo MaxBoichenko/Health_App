@@ -9,14 +9,14 @@ export default function GreetingForm() {
   const userName = useSelector(getUserName);
   return (
     <div className={s.wrapper}>
-      <h1 className={s.title}>Добрий день, {userName}</h1>
+      <h1 className={s.title}>Good day, {userName}</h1>
       <p className={s.text}>
-        Наш додаток пропонує вам дотримуватися дієти та розрахувати калорії.
-        Перейдіть до розділу калькулятор та розрахуйте дієту.
+        Our application allows you to follow a diet and calculate calories. Go
+        to the calculator section and calculate the diet.
       </p>
       <div className={s.btn}>
         <Link to="/calculator-calories" className={s.btnGreeting}>
-          Розрахувати дієту
+          Calculate the diet
         </Link>
       </div>
     </div>

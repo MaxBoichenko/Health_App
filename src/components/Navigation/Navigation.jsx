@@ -18,10 +18,10 @@ const Navigation = () => {
   return (
     <div className={s.navDesct}>
       <NavLink className={getClassName} to="/dairy">
-        Щоденник
+        Diary
       </NavLink>
       <NavLink className={getClassName} to="/calculator-calories">
-        Калькулятор
+        Calculator
       </NavLink>
     </div>
   );

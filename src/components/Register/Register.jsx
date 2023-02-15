@@ -44,7 +44,7 @@ const Register = () => {
   return (
     <section className={s.register}>
       <Container>
-        <h2 className={s.title}>Реєстрація</h2>
+        <h2 className={s.title}>Registration</h2>
         <form className={s.form} onSubmit={handleSubmit(onSubmit)}>
           <Controller
             control={control}
@@ -88,7 +88,7 @@ const Register = () => {
             )}
           />
           <div className={s.wrap}>
-            <Button text="Реєстрація" btnClass="btnLight" />
+            <Button text="Registration" btnClass="btnLight" />
           </div>
         </form>
         {!isRetina && (

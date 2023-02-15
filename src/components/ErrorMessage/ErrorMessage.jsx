@@ -8,7 +8,7 @@ const ErrorMessage = ({ status }) => {
       <div className={style.boo}>
         <div className={style.face} id="face"></div>
       </div>
-      <p className={s.errorMessageTitle}>Щось пішло не так...</p>
+      <p className={s.errorMessageTitle}>Something went wrong...</p>
       <p className={s.errorMessageText}>{status}</p>
     </div>
   );
