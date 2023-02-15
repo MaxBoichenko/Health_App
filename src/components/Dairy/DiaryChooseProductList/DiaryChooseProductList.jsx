@@ -41,7 +41,7 @@ export default function DiaryChooseProductList({
         <>
           {!isOpen && (
             <div className={s.overlay}>
-              <h2 className={s.headTitle}>Виберіть продукт:</h2>
+              <h2 className={s.headTitle}>Select a product:</h2>
               <ul className={s.list}>
                 {searchProduct.map(({ _id, title, calories, weight }) => (
                   <li
@@ -51,8 +51,8 @@ export default function DiaryChooseProductList({
                   >
                     <p className={s.title}> {title.ua}</p>
                     <div className={s.wrapper}>
-                      <p className={s.weight}>{weight} гр</p>
-                      <p className={s.kcal}>{calories} ккал</p>
+                      <p className={s.weight}>{weight} g</p>
+                      <p className={s.kcal}>{calories} kcal</p>
                     </div>
                   </li>
                 ))}

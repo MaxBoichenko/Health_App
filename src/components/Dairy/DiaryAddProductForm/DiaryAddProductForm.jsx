@@ -69,13 +69,13 @@ const DiaryAddProductForm = ({ setModalOpen }) => {
             render={({ field: { onChange, value } }) => (
               <TextFieldDefault
                 value={value}
-                placeholder={'Назва продукту (Рис)'}
+                placeholder={'Product name (Rice)'}
                 name={'query'}
                 control={control}
                 handleChange={onChange}
               />
             )}
-            rules={{ required: 'Введіть назву продукту' }}
+            rules={{ required: 'Enter product name' }}
           />
 
           <ErrorMessage
@@ -97,14 +97,14 @@ const DiaryAddProductForm = ({ setModalOpen }) => {
             render={({ field: { onChange, value } }) => (
               <TextFieldDefault
                 value={value}
-                placeholder={'Вага (гр)'}
+                placeholder={'Weight (g)'}
                 name={'weight'}
                 pattern="[0-9]+"
                 control={control}
                 handleChange={onChange}
               />
             )}
-            rules={{ required: 'Введіть вагу продукту' }}
+            rules={{ required: 'Enter the product weight' }}
           />
           <ErrorMessage
             errors={errors}
@@ -119,7 +119,7 @@ const DiaryAddProductForm = ({ setModalOpen }) => {
         </div>
 
         <div className={s.btn}>
-          {isMobile && <Button text={'Додати'} btnClass={'btn'} />}
+          {isMobile && <Button text={'Add'} btnClass={'btn'} />}
           {isTabletDesktop && <Button text={'+'} btnClass={'btnPlus'} />}
         </div>
       </form>

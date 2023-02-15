@@ -52,7 +52,7 @@ const CalcForm = () => {
     <div className={s.wrapper}>
       <form onSubmit={handleSubmit(onSubmit)} className={s.form}>
         <h1 className={s.title}>
-          Розрахуйте свою денну норму калорій прямо зараз
+          Calculate your daily calorie intake right now
         </h1>
         <div className={s.formParts}>
           <div className={s.formPart}>
@@ -146,7 +146,7 @@ const CalcForm = () => {
           </div>
         </div>
         <div className={s.buttonPosition}>
-          <Button text="Схуднути" type="submit" btnClass="btn" />
+          <Button text="Start losing weight" type="submit" btnClass="btn" />
         </div>
       </form>
       <SideBar />
