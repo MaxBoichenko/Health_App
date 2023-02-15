@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useForm, Controller } from 'react-hook-form';
-import PropTypes from 'prop-types';
 
 import s from './DailyCaloriesForm.module.scss';
 
@@ -164,25 +163,3 @@ const DailyCaloriesForm = () => {
 };
 
 export default DailyCaloriesForm;
-
-DailyCaloriesForm.defaultProps = {
-  onSubmit: () => {},
-  dailyRateDate: () => {},
-  errorDaily: () => {},
-  onChange: () => {},
-  data: {},
-};
-
-DailyCaloriesForm.propTypes = {
-  onSubmit: PropTypes.func,
-  dailyRateDate: PropTypes.func,
-  errorDaily: PropTypes.func,
-  onChange: PropTypes.func,
-  data: PropTypes.shape({
-    weight: PropTypes.string,
-    height: PropTypes.string,
-    age: PropTypes.string,
-    desiredWeight: PropTypes.string,
-    bloodType: PropTypes.string,
-  }),
-};

@@ -1,6 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-import { axiosProductSearch } from '../../api/product-search';
+import { axiosProductSearch } from 'services/product-search';
 
 export const getProductOperations = createAsyncThunk(
   '/product',

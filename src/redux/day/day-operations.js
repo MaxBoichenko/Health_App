@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { axiosDay, axiosDeleteDay, axiosDayInfo } from 'api/day';
+import { axiosDay, axiosDeleteDay, axiosDayInfo } from 'services/day';
 
 export const deleteEatenProduct = createAsyncThunk(
   'day/delete',
