@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.197fc069.css","mappings":"AAAA,sBAGE,mBAFA,aAOA,aANA,uBAIA,OAFA,eACA,MAEA,WACA","sources":["components/Loader/Loader.module.scss"],"sourcesContent":[".loader {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;\n}\n"],"names":[],"sourceRoot":""}
