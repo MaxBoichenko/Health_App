@@ -1,17 +1,17 @@
-import UserRoutes from './Routes/UserRoutes';
-import Header from './Header/Header';
-
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 
-import { refresh } from 'redux/auth/auth';
+import UserRoutes from './Routes/UserRoutes';
+import Header from './Header';
+import { getSid, getUserIsRefreshing } from 'redux/auth/auth-selectors';
+import { refresh } from 'redux/auth/auth-opetations';
 
-import Loader from 'components/Loader/Loader';
+import Loader from 'components/Loader';
 
 export const App = () => {
-  const userIsRefreshing = useSelector(state => state.auth.isRefreshing);
+  const userIsRefreshing = useSelector(getUserIsRefreshing);
 
-  const sid = useSelector(state => state.auth.sid);
+  const sid = useSelector(getSid);
 
   const dispatch = useDispatch();
 
