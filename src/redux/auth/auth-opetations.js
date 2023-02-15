@@ -1,17 +1,24 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { axiosLogin, axiosLogout, axiosRegister, axiosRefresh } from 'api/auth';
-import { axiosGetUser } from 'api/user';
+import {
+  axiosLogin,
+  axiosLogout,
+  axiosRegister,
+  axiosRefresh,
+} from 'services/auth';
+import { axiosGetUser } from 'services/user';
 
 export const register = createAsyncThunk(
   'auth/register',
   async (userData, { rejectWithValue, dispatch }) => {
     try {
-      const {email, password} = userData;
+      const { email, password } = userData;
       const data = await axiosRegister(userData);
-      dispatch(login({
-        email,
-        password
-      }))
+      dispatch(
+        login({
+          email,
+          password,
+        })
+      );
       return data;
     } catch (error) {
       const { data, status } = error.response;

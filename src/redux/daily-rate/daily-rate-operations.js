@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { axiosGetDailyRate, axiosGetDailyRateUser } from 'api/daily-rate';
+import { axiosGetDailyRate, axiosGetDailyRateUser } from 'services/daily-rate';
 
 import { getUser } from 'redux/auth/auth-opetations';
 
