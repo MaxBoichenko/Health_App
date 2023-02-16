@@ -29,7 +29,7 @@ export const field = {
   age: {
     name: 'age',
     type: 'text',
-    placeholder: 'Вік (18-100)*',
+    placeholder: 'Age (18-100)*',
     required: true,
     title: 'Enter a valid number between 18 and 100.',
   },
@@ -48,7 +48,7 @@ export const field = {
     title: 'Enter a valid integer between 20 and 500.',
   },
   bloodType: {
-    name: 'blodtype',
+    name: 'bloodtype',
     type: 'text',
     placeholder: 'Blood type*',
     disabled: true,
