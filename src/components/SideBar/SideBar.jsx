@@ -72,7 +72,7 @@ const SideBar = () => {
                 ? Math.floor(kcalLeft) + ' kcal'
                 : kcalLeft2
                 ? Math.floor(kcalLeft2) + ' kcal'
-                : '000 kcal'}
+                : '0 kcal'}
             </span>
           </li>
           <li className={styles.item_sidebar}>
@@ -82,7 +82,7 @@ const SideBar = () => {
                 ? Math.floor(kcalConsumed) + ' kcal'
                 : kcalConsumed2
                 ? Math.floor(kcalConsumed2) + ' kcal'
-                : '000 kcal'}
+                : '0 kcal'}
             </span>
           </li>
           <li className={styles.item_sidebar}>
@@ -92,7 +92,7 @@ const SideBar = () => {
                 ? Math.floor(dailyRate) + ' kcal'
                 : dailyRate2
                 ? Math.floor(dailyRate2) + ' kcal'
-                : '000 kcal'}
+                : '0 kcal'}
             </span>
           </li>
           <li className={styles.item_sidebar}>
